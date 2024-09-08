@@ -1,11 +1,42 @@
-# boilerplate-ts
+# Char Text Editor
 
-This is a minimal `TypeScript` boilerplate that uses `Vite` as its build system.
+A lightweight, retro-inspired, single file, web-based code editor built with TypeScript, while aspiring to sprinkle in some JavaScript for plugins.
 
-The motivation behind this was to obtain a clean slate to prototype quick lab experiments without the hassle of configuring a new project but with a specific particularity in mind.
+## Overview
 
-As with any Vite project, files in the `public` directory will be copied to the `dist` directory when building the project. However, the aim of this boilerplate was to produce a build consisting of a single self-contained HTML file with all the project's assets inlined.
+Char is a simple, intuitive code editor designed for everyday coding tasks. It provides a distraction-full interface and essential features for editing code while maintaing its premise of being a single HTML file editor by using inline base64 encoding.
 
-That is achieved by a few custom plugins on the `vite.config.ts` configuration, which inlines graphic assets like SVG files into the built JavaScript code. The same is done with other graphic assets' formats like PNG or JPG, however, converting them into a `base64` data string (which will have, as a side-effect, an average of 33% increase in size as a "price paid" to have it inlined into the single HTML file).
+## Implemented features
 
-The main goal of this particular build method is not to have the tiniest possible build by brushing out all possible bits (like I'd do for demoscene purposes) but to create a small build capable of being executed locally on any machine (just by double-clicking the file and opening it with your favourite/default browser) despite having built-in graphical assets, without relying on any type of local web server while complying with browsers's security policies to load local assets.
+* README.md
+
+## TODO features
+
+* Basic text editing capabilities (cut, copy, paste, undo, redo)
+* Real-time syntax highlighting for popular programming languages
+* Customizable font sizes, styles, and colors
+* Line numbers and word count display
+* Keyboard shortcuts for improved productivity
+
+## Installation
+
+To use Char, simply clone this repository and install the required dependencies using npm or yarn. Then, open the `index.html` file in your web browser.
+
+```bash
+git clone https://github.com/Dr-Gomez/char-V8.git
+cd char-V8
+npm install
+npm run build
+open ./dist/index.html
+```
+
+note that you can copy this index.html file anywhere and use it as the code editor, although the the entire project with vite will be required for making any plugins / changes to the editor.
+
+
+# Made by
+
+* Marco Gomez - `@dr-gomez`
+
+## Special thanks
+
+* Marco Gomez (aka my father) - `@thecodetherapy` - for the Base64 encoding typescript template
